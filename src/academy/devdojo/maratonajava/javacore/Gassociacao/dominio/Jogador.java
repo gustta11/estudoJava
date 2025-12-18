@@ -12,11 +12,17 @@ public class Jogador {
         System.out.println(time.getNome());
     }
 
+    public Jogador(String nome, int idade){
+        this.nome = nome;
+        this.idade = idade;
+    }
+
     public Jogador(String nome, int idade, Time time){
         this.nome = nome;
         this.idade = idade;
         this.time = time;
     }
+
 
     public void setNome(String nome){
         this.nome = nome;
@@ -32,5 +38,13 @@ public class Jogador {
 
     public int getIdade(){
         return idade;
+    }
+
+    public Time getTime() {
+        return time;
+    }
+
+    public void setTime(Time time) {
+        this.time = time;
     }
 }
